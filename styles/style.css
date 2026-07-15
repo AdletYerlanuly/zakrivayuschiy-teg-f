@@ -178,10 +178,14 @@
 }
 
 .card__icon-button {
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-block-size: 38px;
+  border: 2px solid transparent;
   outline: none;
   background-color: var(--bg-color);
-  transition: box-shadow 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -230,13 +234,15 @@
   display: none;
 }
 
-.dialog[open] {
+dialog[open] {
   display: flex;
   flex-direction: column;
   gap: 30px;
   padding-inline: 30px;
   padding-block: 30px;
+  border: 2px solid var(--accent-color);
 }
+
 
 .dialog::backdrop {
   opacity: 0.75;

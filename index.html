@@ -528,18 +528,16 @@
         <svg width="39" height="39">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <span class="button__text button__text__dialog"
-          >Вставьте дискету, чтобы продолжить</span
-        >
+        <p class="button__text button__text__dialog">
+          Вставьте дискету, чтобы продолжить
+        </p>
       </div>
-      <button
-        class="button button__dialog"
-        type="button"
-        onclick="window['dialog-id'].close()"
-        aria-controls="dialog-id"
-      >
-        <span class="button__text">ок</span>
-      </button>
+
+      <form method="dialog">
+        <button class="button button__dialog" type="submit">
+          <span class="button__text">ОК</span>
+        </button>
+      </form>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
